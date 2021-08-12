@@ -27,5 +27,5 @@ jobs:
       - name: Build wxWidgets for Windows
         run: |
           cd build/msw
-          nmake /f makefile.vc BUILD=release SHARED=0 RUNTIME_LIBS=static all
+          nmake /f makefile.vc BUILD=release SHARED=0 RUNTIME_LIBS=static
         
