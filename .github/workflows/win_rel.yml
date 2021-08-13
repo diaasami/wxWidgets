@@ -19,10 +19,10 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
-      - name: Build wxWidgets for Windows
-        run: |
-          cd build/msw
-          nmake /f makefile.vc BUILD=release SHARED=0 RUNTIME_LIBS=static
+      #- name: Build wxWidgets for Windows
+      #  run: |
+      #    cd build/msw
+      #    nmake /f makefile.vc BUILD=release SHARED=0 RUNTIME_LIBS=static
 
       - name: Configure build for x86
         uses: ilammy/msvc-dev-cmd@v1
